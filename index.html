@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Holy Burger Київ — бургери на Руставелі</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#000;--accent:#000;--card:#f2f2f2;--onaccent:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--ink:#fff;--accent:#fff;--card:#1a1a1a;--onaccent:#000;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#000;--ink:#fff;--accent:#fff;--card:#1a1a1a;--onaccent:#000;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Onest,system-ui,sans-serif}
+h1,h2,h3{font-family:Unbounded,Impact,sans-serif;margin:0;line-height:1.05}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.hero{padding:56px 0 40px;text-align:left}
+.halo{width:150px;height:44px;border:9px solid var(--accent);border-radius:50%;margin:0 0 -14px 8px;transform:rotate(-6deg)}
+.hero h1{font-size:clamp(46px,15vw,104px);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:30ch;font-size:20px;margin:18px 0 26px}
+.btn{display:inline-block;background:var(--accent);color:var(--onaccent);font-weight:600;text-decoration:none;padding:15px 24px;border-radius:999px;margin:0 8px 8px 0}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+section{padding:36px 0}
+h2{font-size:clamp(28px,8vw,44px);font-weight:800;margin-bottom:18px}
+.menu{display:grid;gap:12px}
+.item{background:var(--card);border-radius:18px;padding:18px 20px;display:flex;justify-content:space-between;gap:16px}
+.item h3{font-size:17px;font-weight:600;margin-bottom:4px}
+.item p{margin:0;font-size:15px;opacity:.8}
+.price{font-family:Unbounded,sans-serif;font-weight:600;white-space:nowrap;color:var(--accent)}
+.info{background:var(--ink);color:var(--bg);border-radius:24px;padding:26px}
+.info a{font-family:Unbounded,sans-serif;font-weight:600}
+.info p{margin:0 0 14px}
+.note{font-size:13px;opacity:.7;padding:24px 0 36px}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+  <div class="halo" aria-hidden="true"></div>
+  <h1>Holy Burger</h1>
+  <p>Соковиті бургери в центрі Києва, на Руставелі.</p>
+  <a class="btn" href="tel:+380444660607">Подзвонити</a>
+  <a class="btn alt" href="#menu">Дивитись меню</a>
+</header>
+
+<section id="menu">
+  <h2>Меню</h2>
+  <div class="menu">
+    <div class="item"><div><h3>Holy Classic</h3><p>Яловичина, чедар, мариновані огірки, фірмовий соус</p></div><div class="price">210 ₴</div></div>
+    <div class="item"><div><h3>Holy Bacon</h3><p>Яловичина, хрусткий бекон, карамелізована цибуля</p></div><div class="price">245 ₴</div></div>
+    <div class="item"><div><h3>Holy Chicken</h3><p>Куряче філе в паніровці, салат, соус часник-лайм</p></div><div class="price">195 ₴</div></div>
+    <div class="item"><div><h3>Holy Veggie</h3><p>Овочева котлета, авокадо, свіжі овочі</p></div><div class="price">185 ₴</div></div>
+    <div class="item"><div><h3>Картопля фрі</h3><p>З сіллю та спеціями, соус на вибір</p></div><div class="price">85 ₴</div></div>
+    <div class="item"><div><h3>Домашній лимонад</h3><p>Класичний або з імбиром</p></div><div class="price">75 ₴</div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Як нас знайти</h2>
+  <div class="info">
+    <p>Київ, вул. Шота Руставелі, 16А</p>
+    <p>Замовлення та столики: <a href="tel:+380444660607">+380 44 466 06 07</a></p>
+    <a class="btn" style="background:var(--bg);color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=Holy+Burger+Шота+Руставелі+16А+Київ">Відкрити на мапі</a>
+  </div>
+</section>
+
+<p class="note">Демо-версія сайту. Страви, ціни й тексти — приклад, їх буде замінено на ваші реальні дані з Instagram.</p>
+</main>
+</body>
+</html>
